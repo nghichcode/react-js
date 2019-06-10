@@ -1,0 +1,15 @@
+POST https://expo.io/--/api/v2/push/send
+
+Host: expo.io
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0
+Accept: application/json
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Referer: https://expo.io/
+content-type: application/json
+origin: https://expo.io
+Content-Length: 87
+Connection: keep-alive
+Cookie: ajs_user_id=%2286695fad-d681-4c65-a927-8cb746607616%22; ajs_group_id=null; ajs_anonymous_id=%22cece09ba-5711-4fcc-9c99-b12bb2a6f844%22; amplitude_id_e91121c19a5bdcccd852cd032dc911feexpo.io=eyJkZXZpY2VJZCI6IjE5ODUyNDk0LWNjODUtNDlhMy04MDIyLTMyZTMwYzg0ZTBlN1IiLCJ1c2VySWQiOiI4NjY5NWZhZC1kNjgxLTRjNjUtYTkyNy04Y2I3NDY2MDc2MTYiLCJvcHRPdXQiOmZhbHNlLCJzZXNzaW9uSWQiOjE1NDgyMTQ5MDk1MzMsImxhc3RFdmVudFRpbWUiOjE1NDgyMTUyNzMyMDksImV2ZW50SWQiOjIwLCJpZGVudGlmeUlkIjoxOCwic2VxdWVuY2VOdW1iZXIiOjM4fQ==; _ga=GA1.2.1585970680.1548211585; kb=b-WcH1RShIQEy1hN6hmETGyA; amplitude_id_cade2a3b39f312de9cf3dd1a36ec4eaeexpo.io=eyJkZXZpY2VJZCI6ImY5ZTM1NjMyLTgxYTMtNGNjMC05ZWI2LTdiYmFjMThmODk5N1IiLCJ1c2VySWQiOiI4NjY5NWZhZC1kNjgxLTRjNjUtYTkyNy04Y2I3NDY2MDc2MTYiLCJvcHRPdXQiOmZhbHNlLCJzZXNzaW9uSWQiOjE1NTE3Njc4NTEyODUsImxhc3RFdmVudFRpbWUiOjE1NTE3Njc4NTEyOTIsImV2ZW50SWQiOjcsImlkZW50aWZ5SWQiOjksInNlcXVlbmNlTnVtYmVyIjoxNn0=; io.expo.auth.sessionSecret={%22id%22:%229a8c0bd0-a375-40c8-be76-7b604039670c%22%2C%22version%22:1%2C%22expires_at%22:1893456000000}; amplitude_idundefinedexpo.io=eyJvcHRPdXQiOmZhbHNlLCJzZXNzaW9uSWQiOm51bGwsImxhc3RFdmVudFRpbWUiOm51bGwsImV2ZW50SWQiOjAsImlkZW50aWZ5SWQiOjAsInNlcXVlbmNlTnVtYmVyIjowfQ==; ks=s-SqWiWRjWQruVGx1t2QftjA; _gid=GA1.2.602635532.1551765862
+
+[{"to":"ExponentPushToken[Mw2T7yOiF6oTrBjqyIW_2M]","title":"Hello","body":"Mim teo"}]

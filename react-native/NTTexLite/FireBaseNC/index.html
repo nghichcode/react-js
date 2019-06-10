@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FireBase Demo</title>
+
+	<style>
+	input, button{width: 200px;height: 30px;text-align: center;margin-left: 38%;margin-bottom: 20px;}
+	#sign-in,#info,#sign-up,#update-form {display: none;}
+	</style>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+
+<!-- UA-101673737-4 -->
+<!-- 518455266156-3f509kc9u3ivcveo0bo414r6fug85rne.apps.googleusercontent.com -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101673737-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());gtag('config', 'UA-101673737-4');
+</script>
+ -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138444374-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138444374-1');
+</script>
+
+<script>
+//  window.fbAsyncInit = function() {
+  //   FB.init({appId:'418441828732334',cookie:true,xfbml:true,version:'v3.2'});
+  //   FB.AppEvents.logPageView();   
+  // };
+  // (function(d, s, id){
+  //    var js, fjs = d.getElementsByTagName(s)[0];
+  //    if (d.getElementById(id)) {return;}
+  //    js = d.createElement(s); js.id = id;
+  //    js.src = "https://connect.facebook.net/en_US/sdk.js";
+  //    fjs.parentNode.insertBefore(js, fjs);
+  // }(document, 'script', 'facebook-jssdk'));
+	// (function(d, s, id) {
+	// 	var js, fjs = d.getElementsByTagName(s)[0];
+	// 	if (d.getElementById(id)) return;
+	// 	js = d.createElement(s); js.id = id;
+	// 	js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+	// 	fjs.parentNode.insertBefore(js, fjs);
+	// }(document, 'script', 'facebook-jssdk'));
+	
+	// FB.getLoginStatus(function(response) {
+ //    statusChangeCallback(response);
+ //    console.log(response);
+	// });
+</script>
+
+</head>
+<body>
+
+<!-- Load Facebook SDK for JavaScript -->
+<script>
+  window.fbAsyncInit=function(){FB.init({xfbml:true,version:'v3.2'});};
+  (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<div id="fb-root"></div>
+<div class="fb-customerchat" attribution=setup_tool page_id="1834699856768675"></div>
+
+
+	<div id="sign-in">
+		<h1 align="center">Login</h1>
+		<input id="txtEmail1" type="text" placeholder="email"></input><br>
+		<input id="txtPass1" type="password" placeholder="password"></input><br>
+		<button id="btnLogin" type="submit">Login</button>
+		<p align="center"><a onclick="showBlock('sign-up')" href="#">SignUp</a></p>
+	</div>
+	<div id="sign-up">
+		<h1 align="center">Sign Up</h1>
+		<input id="txtUser" type="text" placeholder="username"/><br>
+		<input id="txtEmail2" type="email" placeholder="email"/><br>
+		<input id="txtPass2" type="password" placeholder="password"/><br><br>
+		<button id="btnSignUp" type="submit">SignUp</button><br>
+		<p align="center"><a onclick="showBlock('sign-in')" href="#">Already signup? Login now</a></p>
+	</div>
+	<div id="info">
+		<p align="center" id="user-para">Hello World</p>
+		<p align="center">Do you want update?<a onclick="showBlock('update-form')" href="#"> Click Here</a></p><br/>
+		<button id="btnPush" type="submit">Push Notify</button><br/>
+		<button id="btnSend" type="submit">Send Email Verify</button><br/>
+		<button id="btnRemove" type="submit">Delete</button><br/>
+		<button id="btnLogout" type="submit">LogOut</button>
+		<ul id="comment"></ul>
+	</div>
+	<div id="update-form">
+		<h1 align="center">Update</h1>
+		<input id="txtName" type="text" placeholder="Name"></input><br>
+		<input id="txtPhoto" type="text" placeholder="PhotoURL"></input><br>
+		<button id="btnUpdate" type="submit">Update Profile</button>
+	</div>
+	<!-- <script type="text/javascript" src="index.js"></script> -->
+</body>
+</html>

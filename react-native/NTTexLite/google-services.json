@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "103020261494",
+    "firebase_url": "https://demonew-5d12e.firebaseio.com",
+    "project_id": "demonew-5d12e",
+    "storage_bucket": "demonew-5d12e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103020261494:android:6c367f7526389b7c",
+        "android_client_info": {
+          "package_name": "com.nc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103020261494-f66cjm3h43kc2s4or85e57jmmnpltqrb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZiaDZuLrFAXvbwnK2VhX_1XDrsxzHN6A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
