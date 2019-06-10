@@ -1,0 +1,23 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	h3= "hello"
+	a(href="./home") Home
+	br
+	a(href="./store") Store
+	- var authenticated = true
+	h2(class=authenticated ? 'authed' : 'anon') HIU
+	
+	input(data-json=`
+	  {
+	    "very-long": "piece of ",
+	    "data": true
+	  }
+	`, placeholder="Enter your name")
+	br
+	br
+
+	//- Comments for your template writers. Use as much text as you want.
+	// Comments for your HTML readers. Use as much text as you want.
