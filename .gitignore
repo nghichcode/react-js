@@ -1,6 +1,6 @@
 node_modules/
 expressgen/node_modules/
 public/compare-image/
-public/np-redux-npx
-public/np-saga-begin
+np-redux-npx
+np-saga-begin
 public/redux-full-git
